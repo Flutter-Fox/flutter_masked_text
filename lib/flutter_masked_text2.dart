@@ -131,7 +131,7 @@ class MoneyMaskedTextController extends TextEditingController {
     _validateConfig();
 
     this.addListener(() {
-      this.updateValue(this.numberValue ?? 0);
+      this.updateValue(this.numberValue ?? initialValue);
       this.afterChange(this.text, this.numberValue);
     });
 
